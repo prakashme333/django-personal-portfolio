@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'portfolio/base.html' %}
+{% block body_block %}
+
+
+   <h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
+{% comment %} We have counted total blog and if only one blog than blog 
+else blogs that is done by filter pluralize {% endcomment %}
+   <h3 class="text-center mb-5">Prakash has written {{ blog_count }} blog{{blog_count|pluralize}}</h3>
+   {% for blog in blogs  %}
+      <div class="row justify-content-center my-3" >
+         <div class="col-md-10" >
+            <a href="{% url 'blog:detail' blog.id %} "> <h2>{{ blog.title }}</h2> </a>
+            <h5>--{{blog.date|date:'d M Y D'}}--</h5>
+            {% comment %} striptags dont display the tag and doesnot perform the function of tag also and 
+            safe will alow us to give different tag while writting 
+            such as <br> <p> {% endcomment %}
+            <p>{{blog.description|striptags|truncatechars:100}}</p>
+         </div>
+      </div>
+   {% endfor %}
+   {% endblock body_block %}

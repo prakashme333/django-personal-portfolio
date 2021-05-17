@@ -1,0 +1,45 @@
+.navbar-nav .nav-link {
+   color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+   color: rgba(82, 78, 78, 0.5) !important;
+}
+
+.imgg{
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   background-color: rgba(179, 173, 173, 0.3);
+}
+
+#blogtitle {
+   font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+   #hometext {
+       font-size: 4rem;
+   }
+   #blogdetailtitle {
+       font-size: 5rem;
+   }
+}
+
+.bgcolorr{
+   background-color: rgba(184, 198, 245, 0.6) ;
+}
+
+.bgcolorrr{
+   background-color: rgba(184, 198, 245, 0.4) ;
+}
+
+.bgcolorrrr{
+   background-color: rgba(184, 198, 245, 0.4) ;
+}
